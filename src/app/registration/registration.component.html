@@ -1,0 +1,34 @@
+
+
+<div class="container">
+    <div class="form-floating mb-3">
+        <input type="text" [(ngModel)]="username" class="form-control" id="username" placeholder="Enter username">
+        <label for="username">username</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" [(ngModel)]="email" class="form-control" id="email" placeholder="Enter email">
+        <label for="email">email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" [(ngModel)]="password"  class="form-control" id="password" placeholder="Enter password">
+        <label for="password">password</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" [(ngModel)]="confirm_password"  class="form-control" id="confirm_password" placeholder="Confirm pass">
+        <label for="confirm_password">confirm_password</label>
+      </div>
+      <!-- <div>
+        @if(password===confirm_password){
+          <div>Registration done</div>
+        }
+        @else
+        {
+          <div>Enter correct password</div>
+        }
+      </div> -->
+      <div class="form-floating mb-3">
+        <button type="button" class="btn btn-outline-success" (click)="showDetails()">Submit</button>
+      </div>
+</div>
+
+

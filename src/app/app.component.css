@@ -1,0 +1,50 @@
+h1{
+    color:gold ;
+    background-color: black;
+}
+
+.first{
+    background-color: aqua;
+    font-size: 45px;
+}
+
+
+.second{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.success{
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    width: 350px;
+    padding: 20px;
+    background: green;
+
+}
+.error{
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    width: 350px;
+    padding: 20px;
+    background: red;
+}
+
+.warning{
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    width: 350px;
+    padding: 20px;
+    background: yellow;
+}
+
+.a{
+    background-color: blueviolet;
+    
+}
+.b{
+    background-color: aquamarine;
+}

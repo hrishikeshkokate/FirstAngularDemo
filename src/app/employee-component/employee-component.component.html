@@ -1,0 +1,28 @@
+<p>employee-component works!</p>
+<div class="container">
+    <div class="form-floating mb-3">
+        <input type="number" [(ngModel)]="empid" class="form-control" id="empid" placeholder="emp id">
+        <label for="empid">Employee Id</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" [(ngModel)]="name" class="form-control" id="name" placeholder="Emp name">
+        <label for="name">Employee Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" [(ngModel)]="city"  class="form-control" id="city" placeholder="city">
+        <label for="city">City</label>
+      </div>
+      <div class="form-floating mb-3">
+        <button type="button" class="btn btn-outline-success" (click)="addEmployee()">Add Employee</button>
+      </div>
+      <p>
+        Your Emp Id{{empid}}
+      </p>
+      <p>
+        Hello , {{name}}
+      </p>
+      <p>
+        Location {{city}}
+      </p>
+</div>
+

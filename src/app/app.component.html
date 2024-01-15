@@ -1,0 +1,107 @@
+<h1 appHighlight>{{message}}</h1><br>
+<hr style="color: rgb(247, 0, 0); border-width: 3px;">
+
+<p>
+
+  City : <input type="text" [value]="city" [disabled]="isdisabled" /><br /><br />
+
+  Payment: <input type="button" value="Pay" (click)="displayMsg()">
+
+</p>
+<hr style="color: rgb(247, 0, 0); border-width: 3px;">
+<h2 appHighlight>{{childMsg}}</h2>
+<app-employee-list [msg]="info" (passValue)="readMessage($event)"></app-employee-list>
+<hr style="color: rgb(247, 0, 0); border-width: 3px;">
+
+<h3>
+  {{letter}}
+</h3>
+<h3>{{childLetter}}</h3>
+<app-student-list [email]="letter" (passDetail)="sendLetter($event)"></app-student-list>
+<hr style="color: rgb(247, 0, 0); border-width: 3px;">
+
+<app-employee-component></app-employee-component>
+<hr style="color: rgb(247, 0, 0); border-width: 3px;">
+
+<app-registration></app-registration>
+<hr style="color:red; border-width: 3px;">
+
+<app-login></app-login>
+<hr style="color:red; border-width: 3px;">
+
+
+@switch(day){
+@case('Sunday') { <div>Today is holiday</div>}
+@case('Monday') { <div>Today is working</div>}
+@case('Tuesday') { <div>Today is full day</div>}
+@case('Wednesday') { <div>Today is half day</div>}
+
+}
+
+<hr style="color:red; border-width: 3px;">
+
+<div [ngStyle]="addcolour()">This is function method</div>
+
+<hr style="color:red; border-width: 3px;">
+
+<div [ngStyle]="{'background-color':'red','color':'white','font-size':'42px'}">
+  This is sample text in div
+</div>
+
+<hr style="color:red; border-width: 3px;">
+
+<div [ngClass]="'first second'">
+  This is example of ngClass
+</div>
+
+<hr style="color:red; border-width: 3px;">
+
+<button type="button" class="btn btn-outline-success" (click)="success()">Success</button>
+
+<button type="button" class="btn btn-outline-danger" (click)="error()">Error</button>
+
+<button type="button" class="btn btn-outline-warning" (click)="warning()">Warning</button><br>
+
+<h1 class="display-3" [ngClass]="{'success': isSuccess,  'error': isError ,  'warning':isWarning}">{{msg}}</h1><br>
+
+<hr style="color:red; border-width: 3px;">
+
+<h2 appHighlight> this is highlight directive</h2>
+
+<hr style="color:red; border-width: 3px;"><br>
+
+<div class="container-fluid">
+  <div>
+    <div class="row a">1234</div>
+  </div>
+  <div class="row">
+
+    <div class="row-1 b" style="width: 50px; height: 250px;"><div class="row-1">
+     
+      </div>
+      
+      
+      
+    </div></div>
+    
+  
+</div>
+<div>
+  <div class="row">
+    <div class="col-4 a">abc</div>
+    <div class="col-4 b">abc</div>
+    <div class="col-4 a">abc</div>
+
+  </div>
+  
+</div>
+
+{{ currentDate | date:'fullDate' | uppercase}}
+
+{{num|currency:'INR':'symbol':'6.2'}}
+
+<hr style="color:red; border-width: 3px;"><br>
+
+{{5|myMath}}
+
+

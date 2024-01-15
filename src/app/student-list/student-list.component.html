@@ -1,0 +1,19 @@
+
+
+<input type="button" value="Send letter" (click)="sendLetter()"/><br><br>
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Student Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of studentList">
+            <td>{{s.studId}}</td>
+            <td>{{s.studName}}</td>
+            <td>{{s.studMarks}}</td>
+        </tr>
+    </tbody>
+</table>

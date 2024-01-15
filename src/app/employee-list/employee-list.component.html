@@ -1,0 +1,26 @@
+<h2>{{msg}}</h2><br>
+
+<input type="button" value="Send Msg" (click)="sendMessage()"/><br><br>
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Emp Id</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr *ngFor="let e of employeeList">
+            <td>{{e.empid}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.city}}</td>
+        </tr> -->
+        @for(e of employeeList;track e.empid){
+            <tr>
+                <td>{{e.empid}}</td>
+                <td>{{e.name}}</td>
+                <td>{{e.city}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
